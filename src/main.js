@@ -1,8 +1,13 @@
 import Vue from 'vue'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue'
-import router from './router'
+import router from './router' 
+import leftMenu from './layout/left-nav.vue'
 
 Vue.config.productionTip = false
+Vue.use(ElementUI);
+Vue.component('leftMenu',leftMenu)
 
 new Vue({
   router,
