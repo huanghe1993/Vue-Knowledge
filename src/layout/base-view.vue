@@ -45,7 +45,7 @@ export default {
 }
 
 .el-aside {
-  text-align: center;
+  line-height: 200px;
 }
 
 .el-main {
