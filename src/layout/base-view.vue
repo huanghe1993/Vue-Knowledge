@@ -41,7 +41,7 @@ export default {
 
 <style lang = 'scss'>
 .el-header {
-  background-color: #a8c5ec;
+  background-color: #5d9ae9;
   line-height: 46px;
   height: 46px !important; 
 }
