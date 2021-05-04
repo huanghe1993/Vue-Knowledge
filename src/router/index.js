@@ -35,7 +35,7 @@ export const routes = [
       }, 
       {
         path: '/content',
-        name:'内容',
+        name:'插槽',
         icon:'el-icon-tickets',
         component: rigthView,
         children: [
