@@ -4,6 +4,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue'
 import router from './router/index'
 import leftMenu from './layout/left-nav.vue'
+import topHeader from './layout/top-header.vue'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);

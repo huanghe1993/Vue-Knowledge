@@ -2,7 +2,9 @@
   <div>
     <el-container>
       <!--头部内容 -->
-      <el-header id = 'admin-header'>顶部内容</el-header>
+      <el-header id = 'admin-header'>
+        <top-header></top-header>
+      </el-header>
       <el-container>
         <!-- 导航内容 -->
         <el-aside id="left-menu-list-box" width="200px">
@@ -22,7 +24,9 @@
 </template>
 
 <script>
+import topHeader from './top-header.vue';
 export default {
+  components: { topHeader },
     mounted(){
         const leftMenu = document.getElementById("left-menu-list-box")
         const adminHeader = document.getElementById("admin-header")
@@ -38,19 +42,18 @@ export default {
 <style lang = 'scss'>
 .el-header {
   background-color: #a8c5ec;
-  color: #333;
-  text-align: center;
   line-height: 46px;
   height: 46px !important; 
+}
+#left-menu-list-box .el-menu{
+  border-right: none;
 }
 
 .el-aside {
   line-height: 200px;
+  border-right: solid 1px #e6e6e6;
 }
-
-.el-main {
-  background-color: aliceblue;
-  color: #333;
-  text-align: center;
+.el-main{
+  padding: 0;
 }
 </style>
