@@ -33,7 +33,13 @@
 </template>
 
 <script>
-export default {};
+import {routes} from '../router'
+export default {
+    mounted(){
+        console.log(1111);
+        console.log(routes);
+    }
+};
 </script>
 
 <style>

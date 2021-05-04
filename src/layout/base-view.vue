@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang = 'scss'>
 .el-header {
   background-color: #a8c5ec;
   color: #333;
